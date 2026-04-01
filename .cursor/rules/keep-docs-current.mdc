@@ -1,0 +1,34 @@
+---
+description: After any structural change, review and update project documentation
+alwaysApply: true
+---
+
+# Keep Documentation Current
+
+If your change falls into any category in the table below, update the corresponding documentation before finishing.
+
+## What triggers a doc update
+
+| Change made | What to review/update |
+|---|---|
+| New file added or removed | `Project Structure` tree in `AGENTS.md` |
+| New handler helper added to `handler.go` | Response helpers table in `AGENTS.md` Conventions section |
+| New tool registered | Tool Surface table in `AGENTS.md`; Tool reference section in `DESIGN.md`; Tools table in `README.md`; Conventions section in `AGENTS.md` if a new pattern is introduced |
+| Tool removed | Same three locations as above |
+| Tool parameter added, removed, or changed | Parameter table for that tool in `DESIGN.md` |
+| Tool response shape changed | Response description for that tool in `DESIGN.md` |
+| New convention established | `Conventions` section in `AGENTS.md` |
+| New `.cursor/rules/` or `.cursor/skills/` file | Reflect in `AGENTS.md` if it affects agent behavior |
+| Config field added, removed, or changed | `Configuration` table in `DESIGN.md`; Setup section in `README.md` |
+| Auth flow changed | `Authentication` section in `AGENTS.md`; Re-authentication section in `README.md` |
+| Auth scopes changed | `OAuth scopes` section in `DESIGN.md`; `Authentication` section in `AGENTS.md` |
+| CLI command added, removed, or changed | `CLI` section in `AGENTS.md`; CLI Reference section in `README.md` |
+| Non-goals list changed | `Explicit non-goals` section in `DESIGN.md`; "What This Doesn't Do" section in `README.md`; `Explicit Non-Goals` section in `AGENTS.md` |
+| Header detection algorithm changed | `Header Detection` section in `AGENTS.md`; `Header detection` section in `DESIGN.md` |
+| Cross-cutting rule changed (error handling, A1 validation, empty results) | `Cross-cutting rules` section in `DESIGN.md`; `Error Handling` section in `AGENTS.md` |
+| New dependency added | Dependencies list in `AGENTS.md` |
+| Installation or build process changed | Installation section in `README.md` |
+
+## Rule
+
+If none of the above changes were made, no doc update is needed. Do not make cosmetic edits to demonstrate compliance — only update docs when something has genuinely changed.

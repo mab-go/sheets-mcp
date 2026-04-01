@@ -1,0 +1,21 @@
+version: 2
+
+builds:
+  - binary: sheets-mcp
+    main: ./cmd/sheets-mcp
+    goos:
+      - linux
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -X github.com/mab-go/sheets-mcp/internal/version.Version={{.Version}}
+        -X github.com/mab-go/sheets-mcp/internal/version.Commit={{.Commit}}
+        -X github.com/mab-go/sheets-mcp/internal/version.Date={{.Date}}
+
+archives:
+  - format: tar.gz
+
+changelog:
+  use: git
