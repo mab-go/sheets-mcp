@@ -56,6 +56,16 @@ internal/
 docs/
   DESIGN.md              — product/API design specification (authoritative)
   SETUP.md               — step-by-step GCP OAuth setup guide
+.agents/
+  skills/
+    ask-questions/         — structured question-gathering with tiered unknowns
+    commit-message/        — Git commit message generation from diffs
+    explore-codebase/      — systematic pre-implementation codebase exploration
+    make-todos/            — structured task list creation and tracking
+    review-plan/           — plan review for accuracy, correctness, and task items
+    verify-changes/        — build/test/lint verification and doc update checks
+.claude/
+  skills/                 — symlink → ../.agents/skills/
 Makefile                  — build, test, lint, fmt targets
 .golangci.yml             — golangci-lint v2 config
 .editorconfig             — editor formatting rules
