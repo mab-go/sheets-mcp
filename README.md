@@ -68,6 +68,9 @@ cd sheets-mcp
 make build
 ```
 
+> **Note:** Pre-built binaries for Linux and Windows are attached to each
+> tagged [GitHub Release](https://github.com/mab-go/sheets-mcp/releases).
+
 ---
 
 ## Setup

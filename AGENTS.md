@@ -68,6 +68,7 @@ docs/
   skills/                 — symlink → ../.agents/skills/
 Makefile                  — build, test, lint, fmt targets
 .golangci.yml             — golangci-lint v2 config
+.goreleaser.yaml          — goreleaser config; cross-builds Linux/Windows archives on `v*` tags
 .editorconfig             — editor formatting rules
 CLAUDE.md                 — symlink to AGENTS.md (Claude project instructions)
 ```
