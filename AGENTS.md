@@ -75,6 +75,16 @@ CLAUDE.md                 — symlink to AGENTS.md (Claude project instructions)
 
 ---
 
+## Repo Exploration & Discovery
+
+**Prefer LSP for semantic Go queries.** For finding definitions, references,
+implementations, call hierarchy, or type signatures in Go code, use the LSP
+tool over grep -- gopls is configured for this repo and returns semantic
+answers that disambiguate same-named symbols across packages. Grep is still
+fine for plain text searches, non-code files, and quick locate-by-string.
+
+---
+
 ## Tool Surface (7 tools)
 
 All tool names are prefixed with `sheets_` to avoid collisions in multi-server environments. The `spreadsheet_id` parameter is optional on all tools when `default_spreadsheet` is set in config.
